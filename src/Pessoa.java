@@ -1,8 +1,8 @@
 public class Pessoa implements  Comparable{
 
-    int cpf;
-    String nome;
-    int idade;
+    private int cpf;
+    private String nome;
+    private int idade;
 
     public Pessoa(int cpf, String nome, int idade) {
         this.cpf = cpf;

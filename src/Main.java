@@ -1,6 +1,9 @@
-import java.util.*;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         Pessoa pessoa1 = new Pessoa(123, "Diego", 17);
@@ -14,7 +17,12 @@ public class main {
         Set<Pessoa> pessoaSet = new TreeSet<>();
         Collections.addAll(pessoaSet, pessoa1, pessoa2, pessoa3, pessoa4, pessoa5, pessoa6, pessoa7);
 
-        System.out.println(pessoaSet);
+//        System.out.println(pessoaSet);
 
+        Iterator<Pessoa> iterator = pessoaSet.iterator();
+
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 }
