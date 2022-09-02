@@ -29,10 +29,10 @@ public class Pessoa implements  Comparable{
 
     @Override
     public String toString() {
-        return "\nPessoa{" + "\n" +
-                "CPF: " + cpf + '\n' +
-                "NOME: " + nome + '\n' +
-                "IDADE: " + idade +
+        return "Pessoa{" + "\n" +
+                "\tCPF: " + cpf + '\n' +
+                "\tNOME: " + nome + '\n' +
+                "\tIDADE: " + idade +
                 '\n' + "}";
     }
 
